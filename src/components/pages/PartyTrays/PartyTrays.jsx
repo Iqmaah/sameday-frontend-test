@@ -1,7 +1,20 @@
+import { useState, useEffect } from 'react'
+import Foodmodal from "../shared/Foodmodal"
+
+
 const PartyTrays = ({party}) => {
+
+    const [showModal, setshowModal] = useState(false)
+    const ModalClick = () => {
+        setshowModal(true)
+    }
+    const closeModalClick = () => {
+        setshowModal(false)
+    }
+
     return(
-        <div className="container mx-auto">
-            <a href="#" className="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <div className="">
+            <a href="#" onClick={ModalClick} className="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                 
                 <div className="w-9/12 flex flex-col justify-between">
                     <h2 className="pl-2 text-[#07121D] font-bold" style={{fontFamily: 'Inter', fontStyle: "normal", fontWeight: "700px",fontSize: "16px", lineHeight: "24px"}}>{party.name}</h2>

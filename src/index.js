@@ -8,6 +8,7 @@ import Menu from './components/pages/Menu/Menu';
 import PopularItemsCard from './components/pages/PopularItems/PopularItemsCard';
 import Wings from './components/pages/Wings/Wings';
 import Container  from './components/Container';
+import Foodmodal from './components/pages/shared/Foodmodal';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
